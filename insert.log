@@ -1,0 +1,37 @@
+mysql> INSERT INTO MediaType (Name)
+    -> VALUES ("Test Media Type 1");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> INSERT INTO Album (Title, ArtistId)
+    -> VALUES ("Boy", 150);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> SELECT AlbumId FROM Album WHERE Title = "Boy";
++---------+
+| AlbumId |
++---------+
+|     348 |
++---------+
+1 row in set (0.00 sec)
+
+mysql> SELECT MediaTypeId FROM MediaType WHERE Name = "Protected AAC audio file";
++-------------+
+| MediaTypeId |
++-------------+
+|           2 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT GenreId FROM Genre WHERE Name = "Rock";
++---------+
+| GenreId |
++---------+
+|       1 |
++---------+
+1 row in set (0.00 sec)
+
+mysql> INSERT INTO Track (Name, AlbumId, MediaTypeId, GenreId, Composer, Milliseconds, Bytes, UnitPrice)
+    -> VALUES ("I will Follow", 348, 2, 1, "U2", 220000, 1234, 0.99);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> notee

@@ -1,0 +1,58 @@
+mysql> SELECT Track.Name AS Track, MediaType.Name as MediaTypeId FROM Track INNER JOIN MediaType ON Track.MediaTypeId = MediaType.MediaTypeId LIMIT 50;
++-----------------------------------------+-----------------+
+| Track                                   | MediaTypeId     |
++-----------------------------------------+-----------------+
+| For Those About To Rock (We Salute You) | MPEG audio file |
+| Put The Finger On You                   | MPEG audio file |
+| Let's Get It Up                         | MPEG audio file |
+| Inject The Venom                        | MPEG audio file |
+| Snowballed                              | MPEG audio file |
+| Evil Walks                              | MPEG audio file |
+| C.O.D.                                  | MPEG audio file |
+| Breaking The Rules                      | MPEG audio file |
+| Night Of The Long Knives                | MPEG audio file |
+| Spellbound                              | MPEG audio file |
+| Go Down                                 | MPEG audio file |
+| Dog Eat Dog                             | MPEG audio file |
+| Let There Be Rock                       | MPEG audio file |
+| Bad Boy Boogie                          | MPEG audio file |
+| Problem Child                           | MPEG audio file |
+| Overdose                                | MPEG audio file |
+| Hell Ain't A Bad Place To Be            | MPEG audio file |
+| Whole Lotta Rosie                       | MPEG audio file |
+| Walk On Water                           | MPEG audio file |
+| Love In An Elevator                     | MPEG audio file |
+| Rag Doll                                | MPEG audio file |
+| What It Takes                           | MPEG audio file |
+| Dude (Looks Like A Lady)                | MPEG audio file |
+| Janie's Got A Gun                       | MPEG audio file |
+| Cryin'                                  | MPEG audio file |
+| Amazing                                 | MPEG audio file |
+| Blind Man                               | MPEG audio file |
+| Deuces Are Wild                         | MPEG audio file |
+| The Other Side                          | MPEG audio file |
+| Crazy                                   | MPEG audio file |
+| Eat The Rich                            | MPEG audio file |
+| Angel                                   | MPEG audio file |
+| Livin' On The Edge                      | MPEG audio file |
+| All I Really Want                       | MPEG audio file |
+| You Oughta Know                         | MPEG audio file |
+| Perfect                                 | MPEG audio file |
+| Hand In My Pocket                       | MPEG audio file |
+| Right Through You                       | MPEG audio file |
+| Forgiven                                | MPEG audio file |
+| You Learn                               | MPEG audio file |
+| Head Over Feet                          | MPEG audio file |
+| Mary Jane                               | MPEG audio file |
+| Ironic                                  | MPEG audio file |
+| Not The Doctor                          | MPEG audio file |
+| Wake Up                                 | MPEG audio file |
+| You Oughta Know (Alternate)             | MPEG audio file |
+| We Die Young                            | MPEG audio file |
+| Man In The Box                          | MPEG audio file |
+| Sea Of Sorrow                           | MPEG audio file |
+| Bleed The Freak                         | MPEG audio file |
++-----------------------------------------+-----------------+
+50 rows in set (0.00 sec)
+
+mysql> notee

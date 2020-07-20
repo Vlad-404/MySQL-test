@@ -1,0 +1,426 @@
+mysql> SELECT Track.Name AS Track, Genre.GenreID as GenreID FROM Track
+    -> INNER JOIN Genre ON Track.GenreId = Genre.GenreId
+    -> LIMIT 10;
++-----------------------------------------+---------+
+| Track                                   | GenreID |
++-----------------------------------------+---------+
+| For Those About To Rock (We Salute You) |       1 |
+| Balls to the Wall                       |       1 |
+| Fast As a Shark                         |       1 |
+| Restless and Wild                       |       1 |
+| Princess of the Dawn                    |       1 |
+| Put The Finger On You                   |       1 |
+| Let's Get It Up                         |       1 |
+| Inject The Venom                        |       1 |
+| Snowballed                              |       1 |
+| Evil Walks                              |       1 |
++-----------------------------------------+---------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT Track.Name AS Track, Genre.GenreID as GenreID FROM Track
+    -> INNER JOIN Genre ON Track.GenreId = Genre.GenreId
+    -> WHERE Genre.Name = "Jazz"
+    -> ;
++--------------------------------------------------------------+---------+
+| Track                                                        | GenreID |
++--------------------------------------------------------------+---------+
+| Desafinado                                                   |       2 |
+| Garota De Ipanema                                            |       2 |
+| Samba De Uma Nota Só (One Note Samba)                        |       2 |
+| Por Causa De Você                                            |       2 |
+| Ligia                                                        |       2 |
+| Fotografia                                                   |       2 |
+| Dindi (Dindi)                                                |       2 |
+| Se Todos Fossem Iguais A Você (Instrumental)                 |       2 |
+| Falando De Amor                                              |       2 |
+| Angela                                                       |       2 |
+| Corcovado (Quiet Nights Of Quiet Stars)                      |       2 |
+| Outra Vez                                                    |       2 |
+| O Boto (Bôto)                                                |       2 |
+| Canta, Canta Mais                                            |       2 |
+| Quadrant                                                     |       2 |
+| Snoopy's search-Red baron                                    |       2 |
+| Spanish moss-"A sound portrait"-Spanish moss                 |       2 |
+| Moon germs                                                   |       2 |
+| Stratus                                                      |       2 |
+| The pleasant pheasant                                        |       2 |
+| Solo-Panhandler                                              |       2 |
+| Do what cha wanna                                            |       2 |
+| Heart of the Night                                           |       2 |
+| De La Luz                                                    |       2 |
+| Westwood Moon                                                |       2 |
+| Midnight                                                     |       2 |
+| Playtime                                                     |       2 |
+| Surrender                                                    |       2 |
+| Valentino's                                                  |       2 |
+| Believe                                                      |       2 |
+| As We Sleep                                                  |       2 |
+| When Evening Falls                                           |       2 |
+| J Squared                                                    |       2 |
+| Best Thing                                                   |       2 |
+| Now's The Time                                               |       2 |
+| Jeru                                                         |       2 |
+| Compulsion                                                   |       2 |
+| Tempus Fugit                                                 |       2 |
+| Walkin'                                                      |       2 |
+| 'Round Midnight                                              |       2 |
+| Bye Bye Blackbird                                            |       2 |
+| New Rhumba                                                   |       2 |
+| Generique                                                    |       2 |
+| Summertime                                                   |       2 |
+| So What                                                      |       2 |
+| The Pan Piper                                                |       2 |
+| Someday My Prince Will Come                                  |       2 |
+| My Funny Valentine (Live)                                    |       2 |
+| E.S.P.                                                       |       2 |
+| Nefertiti                                                    |       2 |
+| Petits Machins (Little Stuff)                                |       2 |
+| Miles Runs The Voodoo Down                                   |       2 |
+| Little Church (Live)                                         |       2 |
+| Black Satin                                                  |       2 |
+| Jean Pierre (Live)                                           |       2 |
+| Time After Time                                              |       2 |
+| Portia                                                       |       2 |
+| Jeepers Creepers                                             |       2 |
+| Blue Rythm Fantasy                                           |       2 |
+| Drum Boogie                                                  |       2 |
+| Let Me Off Uptown                                            |       2 |
+| Leave Us Leap                                                |       2 |
+| Opus No.1                                                    |       2 |
+| Boogie Blues                                                 |       2 |
+| How High The Moon                                            |       2 |
+| Disc Jockey Jump                                             |       2 |
+| Up An' Atom                                                  |       2 |
+| Bop Boogie                                                   |       2 |
+| Lemon Drop                                                   |       2 |
+| Coronation Drop                                              |       2 |
+| Overtime                                                     |       2 |
+| Imagination                                                  |       2 |
+| Don't Take Your Love From Me                                 |       2 |
+| Midget                                                       |       2 |
+| I'm Coming Virginia                                          |       2 |
+| Payin' Them Dues Blues                                       |       2 |
+| Jungle Drums                                                 |       2 |
+| Showcase                                                     |       2 |
+| Swedish Schnapps                                             |       2 |
+| Roll Call                                                    |       2 |
+| Otay                                                         |       2 |
+| Groovus Interruptus                                          |       2 |
+| Paris On Mine                                                |       2 |
+| In Time                                                      |       2 |
+| Plan B                                                       |       2 |
+| Outbreak                                                     |       2 |
+| Baltimore, DC                                                |       2 |
+| Talkin Loud and Saying Nothin                                |       2 |
+| Doce De Carnaval (Candy All)                                 |       2 |
+| Lamento De Carnaval                                          |       2 |
+| Pretinha                                                     |       2 |
+| Colibri                                                      |       2 |
+| Love Is The Colour                                           |       2 |
+| Magnetic Ocean                                               |       2 |
+| Deep Waters                                                  |       2 |
+| L'Arc En Ciel De Miles                                       |       2 |
+| Gypsy                                                        |       2 |
+| Journey Into Sunlight                                        |       2 |
+| Sunchild                                                     |       2 |
+| Millenium                                                    |       2 |
+| Thinking 'Bout Tomorrow                                      |       2 |
+| Jacob's Ladder                                               |       2 |
+| She Wears Black                                              |       2 |
+| Dark Side Of The Cog                                         |       2 |
+| Springsville                                                 |       2 |
+| The Maids Of Cadiz                                           |       2 |
+| The Duke                                                     |       2 |
+| My Ship                                                      |       2 |
+| Miles Ahead                                                  |       2 |
+| Blues For Pablo                                              |       2 |
+| New Rhumba                                                   |       2 |
+| The Meaning Of The Blues                                     |       2 |
+| Lament                                                       |       2 |
+| I Don't Wanna Be Kissed (By Anyone But You)                  |       2 |
+| Springsville (Alternate Take)                                |       2 |
+| Blues For Pablo (Alternate Take)                             |       2 |
+| The Meaning Of The Blues/Lament (Alternate Take)             |       2 |
+| I Don't Wanna Be Kissed (By Anyone But You) (Alternate Take) |       2 |
+| Morning Dance                                                |       2 |
+| Jubilee                                                      |       2 |
+| Rasul                                                        |       2 |
+| Song For Lorraine                                            |       2 |
+| Starburst                                                    |       2 |
+| Heliopolis                                                   |       2 |
+| It Doesn't Matter                                            |       2 |
+| Little Linda                                                 |       2 |
+| End Of Romanticism                                           |       2 |
+| Amanda                                                       |       2 |
+| Despertar                                                    |       2 |
+| OAM's Blues                                                  |       2 |
++--------------------------------------------------------------+---------+
+130 rows in set (0.00 sec)
+
+mysql> 
+mysql> 
+mysql> 
+mysql> SELECT Track.Name AS Track, Genre.GenreID as GenreID FROM Track INNER JOIN Genre ON Track.GenreId = Genre.GenreId WHERE Genre.Name = "Jazz";
++--------------------------------------------------------------+---------+
+| Track                                                        | GenreID |
++--------------------------------------------------------------+---------+
+| Desafinado                                                   |       2 |
+| Garota De Ipanema                                            |       2 |
+| Samba De Uma Nota Só (One Note Samba)                        |       2 |
+| Por Causa De Você                                            |       2 |
+| Ligia                                                        |       2 |
+| Fotografia                                                   |       2 |
+| Dindi (Dindi)                                                |       2 |
+| Se Todos Fossem Iguais A Você (Instrumental)                 |       2 |
+| Falando De Amor                                              |       2 |
+| Angela                                                       |       2 |
+| Corcovado (Quiet Nights Of Quiet Stars)                      |       2 |
+| Outra Vez                                                    |       2 |
+| O Boto (Bôto)                                                |       2 |
+| Canta, Canta Mais                                            |       2 |
+| Quadrant                                                     |       2 |
+| Snoopy's search-Red baron                                    |       2 |
+| Spanish moss-"A sound portrait"-Spanish moss                 |       2 |
+| Moon germs                                                   |       2 |
+| Stratus                                                      |       2 |
+| The pleasant pheasant                                        |       2 |
+| Solo-Panhandler                                              |       2 |
+| Do what cha wanna                                            |       2 |
+| Heart of the Night                                           |       2 |
+| De La Luz                                                    |       2 |
+| Westwood Moon                                                |       2 |
+| Midnight                                                     |       2 |
+| Playtime                                                     |       2 |
+| Surrender                                                    |       2 |
+| Valentino's                                                  |       2 |
+| Believe                                                      |       2 |
+| As We Sleep                                                  |       2 |
+| When Evening Falls                                           |       2 |
+| J Squared                                                    |       2 |
+| Best Thing                                                   |       2 |
+| Now's The Time                                               |       2 |
+| Jeru                                                         |       2 |
+| Compulsion                                                   |       2 |
+| Tempus Fugit                                                 |       2 |
+| Walkin'                                                      |       2 |
+| 'Round Midnight                                              |       2 |
+| Bye Bye Blackbird                                            |       2 |
+| New Rhumba                                                   |       2 |
+| Generique                                                    |       2 |
+| Summertime                                                   |       2 |
+| So What                                                      |       2 |
+| The Pan Piper                                                |       2 |
+| Someday My Prince Will Come                                  |       2 |
+| My Funny Valentine (Live)                                    |       2 |
+| E.S.P.                                                       |       2 |
+| Nefertiti                                                    |       2 |
+| Petits Machins (Little Stuff)                                |       2 |
+| Miles Runs The Voodoo Down                                   |       2 |
+| Little Church (Live)                                         |       2 |
+| Black Satin                                                  |       2 |
+| Jean Pierre (Live)                                           |       2 |
+| Time After Time                                              |       2 |
+| Portia                                                       |       2 |
+| Jeepers Creepers                                             |       2 |
+| Blue Rythm Fantasy                                           |       2 |
+| Drum Boogie                                                  |       2 |
+| Let Me Off Uptown                                            |       2 |
+| Leave Us Leap                                                |       2 |
+| Opus No.1                                                    |       2 |
+| Boogie Blues                                                 |       2 |
+| How High The Moon                                            |       2 |
+| Disc Jockey Jump                                             |       2 |
+| Up An' Atom                                                  |       2 |
+| Bop Boogie                                                   |       2 |
+| Lemon Drop                                                   |       2 |
+| Coronation Drop                                              |       2 |
+| Overtime                                                     |       2 |
+| Imagination                                                  |       2 |
+| Don't Take Your Love From Me                                 |       2 |
+| Midget                                                       |       2 |
+| I'm Coming Virginia                                          |       2 |
+| Payin' Them Dues Blues                                       |       2 |
+| Jungle Drums                                                 |       2 |
+| Showcase                                                     |       2 |
+| Swedish Schnapps                                             |       2 |
+| Roll Call                                                    |       2 |
+| Otay                                                         |       2 |
+| Groovus Interruptus                                          |       2 |
+| Paris On Mine                                                |       2 |
+| In Time                                                      |       2 |
+| Plan B                                                       |       2 |
+| Outbreak                                                     |       2 |
+| Baltimore, DC                                                |       2 |
+| Talkin Loud and Saying Nothin                                |       2 |
+| Doce De Carnaval (Candy All)                                 |       2 |
+| Lamento De Carnaval                                          |       2 |
+| Pretinha                                                     |       2 |
+| Colibri                                                      |       2 |
+| Love Is The Colour                                           |       2 |
+| Magnetic Ocean                                               |       2 |
+| Deep Waters                                                  |       2 |
+| L'Arc En Ciel De Miles                                       |       2 |
+| Gypsy                                                        |       2 |
+| Journey Into Sunlight                                        |       2 |
+| Sunchild                                                     |       2 |
+| Millenium                                                    |       2 |
+| Thinking 'Bout Tomorrow                                      |       2 |
+| Jacob's Ladder                                               |       2 |
+| She Wears Black                                              |       2 |
+| Dark Side Of The Cog                                         |       2 |
+| Springsville                                                 |       2 |
+| The Maids Of Cadiz                                           |       2 |
+| The Duke                                                     |       2 |
+| My Ship                                                      |       2 |
+| Miles Ahead                                                  |       2 |
+| Blues For Pablo                                              |       2 |
+| New Rhumba                                                   |       2 |
+| The Meaning Of The Blues                                     |       2 |
+| Lament                                                       |       2 |
+| I Don't Wanna Be Kissed (By Anyone But You)                  |       2 |
+| Springsville (Alternate Take)                                |       2 |
+| Blues For Pablo (Alternate Take)                             |       2 |
+| The Meaning Of The Blues/Lament (Alternate Take)             |       2 |
+| I Don't Wanna Be Kissed (By Anyone But You) (Alternate Take) |       2 |
+| Morning Dance                                                |       2 |
+| Jubilee                                                      |       2 |
+| Rasul                                                        |       2 |
+| Song For Lorraine                                            |       2 |
+| Starburst                                                    |       2 |
+| Heliopolis                                                   |       2 |
+| It Doesn't Matter                                            |       2 |
+| Little Linda                                                 |       2 |
+| End Of Romanticism                                           |       2 |
+| Amanda                                                       |       2 |
+| Despertar                                                    |       2 |
+| OAM's Blues                                                  |       2 |
++--------------------------------------------------------------+---------+
+130 rows in set (0.00 sec)
+
+mysql> SELECT Track.Name AS Track, Genre.GenreID as GenreID FROM Track
+    -> INNER JOIN Genre ON Track.GenreId = Genre.GenreId
+    -> LIMIT 10;
++-----------------------------------------+---------+
+| Track                                   | GenreID |
++-----------------------------------------+---------+
+| For Those About To Rock (We Salute You) |       1 |
+| Balls to the Wall                       |       1 |
+| Fast As a Shark                         |       1 |
+| Restless and Wild                       |       1 |
+| Princess of the Dawn                    |       1 |
+| Put The Finger On You                   |       1 |
+| Let's Get It Up                         |       1 |
+| Inject The Venom                        |       1 |
+| Snowballed                              |       1 |
+| Evil Walks                              |       1 |
++-----------------------------------------+---------+
+10 rows in set (0.01 sec)
+
+mysql> SELECT Track.Name AS Track, Genre.GenreID as GenreID FROM Track
+    -> INNER JOIN Genre ON Track.GenreId = Genre.GenreId LIMIT 10;
++-----------------------------------------+---------+
+| Track                                   | GenreID |
++-----------------------------------------+---------+
+| For Those About To Rock (We Salute You) |       1 |
+| Balls to the Wall                       |       1 |
+| Fast As a Shark                         |       1 |
+| Restless and Wild                       |       1 |
+| Princess of the Dawn                    |       1 |
+| Put The Finger On You                   |       1 |
+| Let's Get It Up                         |       1 |
+| Inject The Venom                        |       1 |
+| Snowballed                              |       1 |
+| Evil Walks                              |       1 |
++-----------------------------------------+---------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT Track.Name AS Track, Genre.Name as GenreID FROM Track INNER JOIN Genre ON Track.GenreId = Genre.GenreId LIMIT 10;
++-----------------------------------------+---------+
+| Track                                   | GenreID |
++-----------------------------------------+---------+
+| For Those About To Rock (We Salute You) | Rock    |
+| Balls to the Wall                       | Rock    |
+| Fast As a Shark                         | Rock    |
+| Restless and Wild                       | Rock    |
+| Princess of the Dawn                    | Rock    |
+| Put The Finger On You                   | Rock    |
+| Let's Get It Up                         | Rock    |
+| Inject The Venom                        | Rock    |
+| Snowballed                              | Rock    |
+| Evil Walks                              | Rock    |
++-----------------------------------------+---------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT Track.Name AS Track, Genre.Name as GenreID FROM TrackINNER JOIN Genre ON Track.GenreId = Genre.GenreId WHERE Genre.Name = "Jazz" LIMIT 20
+    -> 
+    -> ;
+ERROR 1146 (42S02): Table 'Chinook.TrackINNER' doesn't exist
+mysql> SELECT Track.Name AS Track, Genre.Name as GenreID FROM Track
+    -> INNER JOIN Genre ON Track.GenreId = Genre.GenreId
+    -> WHERE Genre.Name = "Jazz"
+    -> LIMIT 20;
++-----------------------------------------------+---------+
+| Track                                         | GenreID |
++-----------------------------------------------+---------+
+| Desafinado                                    | Jazz    |
+| Garota De Ipanema                             | Jazz    |
+| Samba De Uma Nota Só (One Note Samba)         | Jazz    |
+| Por Causa De Você                             | Jazz    |
+| Ligia                                         | Jazz    |
+| Fotografia                                    | Jazz    |
+| Dindi (Dindi)                                 | Jazz    |
+| Se Todos Fossem Iguais A Você (Instrumental)  | Jazz    |
+| Falando De Amor                               | Jazz    |
+| Angela                                        | Jazz    |
+| Corcovado (Quiet Nights Of Quiet Stars)       | Jazz    |
+| Outra Vez                                     | Jazz    |
+| O Boto (Bôto)                                 | Jazz    |
+| Canta, Canta Mais                             | Jazz    |
+| Quadrant                                      | Jazz    |
+| Snoopy's search-Red baron                     | Jazz    |
+| Spanish moss-"A sound portrait"-Spanish moss  | Jazz    |
+| Moon germs                                    | Jazz    |
+| Stratus                                       | Jazz    |
+| The pleasant pheasant                         | Jazz    |
++-----------------------------------------------+---------+
+20 rows in set (0.00 sec)
+
+mysql> show tables
+    -> 
+    -> ;
++-------------------+
+| Tables_in_Chinook |
++-------------------+
+| Album             |
+| Artist            |
+| Customer          |
+| Employee          |
+| Genre             |
+| Invoice           |
+| InvoiceLine       |
+| MediaType         |
+| Playlist          |
+| PlaylistTrack     |
+| Track             |
++-------------------+
+11 rows in set (0.01 sec)
+
+mysql> SELECT * FROM Playlist
+    -> Limit 10;
++------------+--------------+
+| PlaylistId | Name         |
++------------+--------------+
+|          1 | Music        |
+|          2 | Movies       |
+|          3 | TV Shows     |
+|          4 | Audiobooks   |
+|          5 | 90’s Music   |
+|          6 | Audiobooks   |
+|          7 | Movies       |
+|          8 | Music        |
+|          9 | Music Videos |
+|         10 | TV Shows     |
++------------+--------------+
+10 rows in set (0.00 sec)
+
+mysql> notee
